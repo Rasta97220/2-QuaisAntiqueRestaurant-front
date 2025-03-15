@@ -1,18 +1,35 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
-html{
+html {
     position: relative;
     min-height: 100%;
 }
 
-main{
+main {
     margin-bottom: 250px;
 }
 
 footer.footer {
-   padding: 15px;
-   position: absolute;
+    padding: 15px;
+    position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.hero-scene {
+    position: relative; // Ajout de position relative pour s'assurer que l'élément est positionné correctement
+    height: 300px; // Ajout d'une hauteur pour s'assurer que l'élément a une taille définie
+    background-image: url("../images/fondheroscene.jpg"); // Vérifiez que le chemin est correct
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-scene-content {
+    height: 100%; // Assurez-vous que la hauteur est définie ici
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

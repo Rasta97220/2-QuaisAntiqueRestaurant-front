@@ -204,7 +204,6 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(41, 34, 34, 0);
 }
 
@@ -488,8 +487,7 @@ select:disabled {
 button,
 [type=button],
 [type=reset],
-  -webkit-appearance: button;
-  appearance: button;
+[type=submit] {
   -webkit-appearance: button;
 }
 button:not(:disabled),
@@ -545,8 +543,7 @@ legend + * {
 ::-webkit-inner-spin-button {
   height: auto;
 }
-  -webkit-appearance: textfield;
-  appearance: textfield;
+
 [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
@@ -2045,8 +2042,7 @@ progress {
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
 }
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -11984,4 +11980,21 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.hero-scene {
+  position: relative;
+  height: 300px;
+  background-image: url("../images/fondheroscene.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-scene-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
